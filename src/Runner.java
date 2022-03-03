@@ -57,5 +57,48 @@ public class Runner
         {
             System.out.println(Arrays.toString(num));
         }
+
+        int[][] test = {{5, 2}, {1, 3}, {7, 9}};
+        System.out.println(FunWith2DArrays.totalElements(test));
+        int[][] test2 = {{1, 2, 3}, {6, 5, 4}};
+        System.out.println(FunWith2DArrays.totalElements(test2));
+        int[][] test3 = {{1, 2, 3, 4}, {7, 8, 9, 10}};
+        System.out.println(FunWith2DArrays.totalElements(test3));
+        int[][] test4 = {{4, 5, 2}, {1, 9, 7}, {8, 10, 13}};
+        System.out.println(FunWith2DArrays.totalElements(test4));
+        int[][] test5 = {{4, 5, 2, 4, 1}, {1, 9, 7, 8, 2}, {8, 10, 13, 4, 3}};
+        System.out.println(FunWith2DArrays.totalElements(test5));
+        int[][] test6 = {{4, 5, 2, 4, 8, 9, 10}, {1, 9, 7, 8, 6, 1, 2}};
+        System.out.println(FunWith2DArrays.totalElements(test6));
+        int[][] test7 = {{4}, {7,}, {8}, {2}};
+        System.out.println(FunWith2DArrays.totalElements(test7));
+        int[][] test8 = {{4}};
+        System.out.println(FunWith2DArrays.totalElements(test8));
+        int[][] test9 = {{}};
+        System.out.println(FunWith2DArrays.totalElements(test9));
+
+        String[][] words = {{"hi", "bye", "stuff", "go"},
+                            {"time", "up", "you", "good"},
+                            {"map", "low", "bow", "mom"}};
+        FunWith2DArrays.fourCorners(words);
+
+        String[][] words2 = {{"time", "up", "bye"},
+                             {"hi", "hit", "up"},
+                             {"map", "bam", "low"},
+                             {"bow", "mom", "joy"}};
+        FunWith2DArrays.fourCorners(words2);
+
+        String[][] words3 = {{"phone", "mouse", "keyboard"}};
+        FunWith2DArrays.fourCorners(words3);
+
+        String[][] words4 = {{"cat"},
+                             {"dog"},
+                             {"hamster"},
+                             {"bird"}};
+        FunWith2DArrays.fourCorners(words4);
+
+        String[][] words5 = {{"time"}};
+        FunWith2DArrays.fourCorners(words5);
+
     }
 }
